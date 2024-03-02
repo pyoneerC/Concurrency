@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="spinlock.cpp" />
     <ClCompile Include="stopthread.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
