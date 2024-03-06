@@ -12,7 +12,7 @@ void critical_section(int id) {
     {
 
         std::this_thread::sleep_for(std::chrono::milliseconds(spin_count));
-        spin_count <<= 1;
+        spin_count <<= 1; //incremental backoff, tho unif_dist(1,1024) performs better
 
         lock.clear(std::memory_order_release);
 
